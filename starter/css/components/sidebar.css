@@ -1,0 +1,88 @@
+aside {
+    width: 7%;
+    height: 100%;
+    padding: 1rem 1rem 0 0;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    z-index: 99;
+    background-color: var(--bg-color);
+    margin-left: 1rem;
+}
+
+#menues {
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+aside button {
+    width: 4.5rem;
+    border: none;
+    padding: 0.8rem;
+    background: transparent;
+    border-radius: 10px;
+    color: var(--bg-color-third);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+
+.hidden {
+    display: none;
+}
+
+.on_active {
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    margin-left: 0px;
+}
+
+aside.on_active {
+    height: 100vh;
+}
+
+aside button a {
+    color: var(--bg-color-third);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+aside button.on_active a {
+    flex-direction: row;
+}
+
+aside button.active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+aside button.on_active .u-text {
+    display: block;
+    font-size: 16px;
+}
+
+aside button a span {
+    font-size: 12px;
+}
+
+aside button:hover {
+    background-color: #272727;
+}
+
+.fa-house {
+    color: white;
+    font-size: 20px;
+}
